@@ -6,8 +6,8 @@ function clicky() {
     document.getElementById("work").innerHTML = n;
     var w = (n / max) * (100);
     console.log(w);
-    document.getElementById("done").style.width = w + "%";
-    document.getElementById("display2").innerHTML = w + "%";
+    document.getElementById("done").style.width = w.toFixed(2) + "%";
+    document.getElementById("display2").innerHTML = w.toFixed(2) + "%";
     if (w == 100) {
         alert("You have completed your target. Congratulations!");
         window.location.reload();
