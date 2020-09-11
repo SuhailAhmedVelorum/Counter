@@ -1,5 +1,9 @@
 var n = 0;
 var max = prompt("Please enter your target:");
+if (max < 1){
+    alert("You cant count negative, Dummy!");
+    window.location.reload();
+}
 
 function clicky() {
     n += 1;
