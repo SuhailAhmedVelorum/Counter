@@ -1,7 +1,10 @@
 var n = 0;
 var max = prompt("Please enter your target:");
-if (max < 1){
-    alert("You cant count negative, Dummy!");
+if(max < 0){
+    alert("You cant count in negative, Dummy!");
+    window.location.reload();
+}else if(max = 0){
+    alert("Really? Do you not have any aims?");
     window.location.reload();
 }
 
